@@ -1,0 +1,71 @@
+/* Fonts */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica_regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+ }
+ 
+ /* Layout */
+ .container {
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+ }
+ 
+ /* Components */
+ .mainmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1520px;
+  margin: 0 auto;
+ }
+ 
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #222;
+ }
+ 
+ .mainmenulist {
+  display: flex;
+  gap: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+ }
+ 
+ .langlist {
+  display: flex;
+  gap: 8px;
+ }
+ 
+ /* Hover states */
+ .mainmenulist a:hover,
+ .mainmenulist a:focus {
+  color: #222;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+ }
+ 
+ /* Media queries */
+ @media screen and (max-width: 767px) {
+  /* Mobile styles */
+ }
+ 
+ @media screen and (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+  .container {
+      max-width: 1920px;
+  }
+ }

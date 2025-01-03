@@ -53,9 +53,16 @@
   transition: all 0.3s ease;
  }
  
+ .container--hero {
+    /* background-color: 222222; */
+}   
+
  /* Media queries */
  @media screen and (max-width: 767px) {
-  /* Mobile styles */
+  
+
+
+
  }
  
  @media screen and (min-width: 768px) {

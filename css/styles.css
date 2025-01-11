@@ -86,28 +86,39 @@ body {
     background-color: #222222;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
   }
 
-  .hero_text {
-    padding-left: 193px;
-    padding-top: 85px;
+  .hero_text_block {
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
   }
 
   .hero_title1 {
     font-weight: 700;
-    font-size: 150px;
+    font-size: 96px;
     letter-spacing: -0.05em;
     color: #fdc708;
   }
 
   .hero_title2 {
     font-weight: 700;
-    font-size: 200px;
+    font-size: 146px;
     letter-spacing: -0.02em;
     color: #fff;
   }
 
-  .hero_subtitle1,
+  .hero_subtitle1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 48px;
+  }
+
   .hero_subtitle2 {
     font-weight: 500;
     font-size: 20px;
@@ -116,7 +127,7 @@ body {
   }
 
   .button_contact {
-    margin-top: 92px;
+    margin-top: 96px;
     display: flex;
     gap: 46px;
   }
@@ -124,12 +135,13 @@ body {
   .cta-button {
     background-color: #fdc708;
     width: 518px;
-    height: 90px;
-    border-radius: 10px;
+    height: 80px;
+    border-radius: 8px;
     border: none;
     font-weight: 700;
     font-size: 20px;
     color: black;
+    padding: 32px 24px;
 
     display: flex;
     justify-content: center;
@@ -142,5 +154,14 @@ body {
     gap: 8px;
     margin-left: 46px;
     align-items: end;
+  }
+
+  .hero_img {
+    position: absolute; /* Змінюємо на абсолютне позиціонування */
+    right: 0; /* Вирівнюємо по правому краю */
+    bottom: 0; /* Вирівнюємо по низу */
+    max-height: 100%; /* Забезпечуємо, щоб зображення не перевищувало висоту контейнера */
+    width: auto; /* Зберігаємо пропорції */
+    object-fit: contain; /* Зберігаємо пропорції при масштабуванні */
   }
 }

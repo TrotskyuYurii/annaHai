@@ -13,77 +13,73 @@ body {
   background-color: #ffffff;
 }
 
-/* Components */
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  color: #222;
-}
-
-.mainmenulist {
-  display: flex;
-  gap: 28px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #000;
-}
-
-.langlist {
-  display: flex;
-  gap: 8px;
-}
-
-/* Hover states */
-.mainmenulist a:hover,
-.mainmenulist a:focus {
-  color: #222;
-  opacity: 0.8;
-  transition: all 0.3s ease;
-}
-
-.mainmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-/* Media queries */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/* Media queries mobile */
+@media screen and (min-width: 320px) and (max-width: 1440px) {
   .container {
     max-width: 320px;
   }
 }
 
-@media screen and (min-width: 768px) {
+/* Media queries desktop */
+@media screen and (min-width: 1440px) {
   .container-header {
+    max-width: 1040px;
     margin: 0 auto;
   }
 
-  .container {
-    height: 100%;
-    padding: 0px 0px;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #222;
   }
-}
 
+  .logo_text {
+    font-size: 16px;
+  }
 
+  .mainmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
 
+  .mainmenulist {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
 
-@media screen and (min-width: 1440px) {
+  .mainmenulist a:hover,
+  .mainmenulist a:focus {
+    color: #222;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .langlist {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 4px;
+  }
+
+  .langlist_active {
+    color: #fdc708;
+    opacity: 0.8;
+  }
+
   .container {
     max-width: 1440px;
     height: 100%;
     padding: 0px 0px;
     margin: 0 auto;
-  }
-
-  .container-header {
-    max-width: 1040px;
   }
 
   .container-hero {

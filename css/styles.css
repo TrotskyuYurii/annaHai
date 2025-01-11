@@ -71,17 +71,19 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
+
+
+
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1920px;
+    max-width: 1440px;
     height: 100%;
     padding: 0px 0px;
     margin: 0 auto;
   }
 
   .container-header {
-    max-width: 1520px;
-    /* margin: 0 auto; */
+    max-width: 1040px;
   }
 
   .container-hero {

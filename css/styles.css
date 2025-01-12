@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+:root {
+  --main-color1: #FDC708;
+}
+
 body {
   margin: 0;
   font-family: "Helvetica", Arial, sans-serif;
@@ -86,7 +90,7 @@ body {
   }
 
   .langlist_active {
-    color: #fdc708;
+    color: var(--main-color1);
     opacity: 0.8;
   }
 
@@ -116,7 +120,7 @@ body {
     font-weight: 700;
     font-size: 96px;
     letter-spacing: -0.05em;
-    color: #fdc708;
+    color: var(--main-color1);
   }
 
   .hero_title2 {
@@ -147,7 +151,7 @@ body {
   }
 
   .cta-button {
-    background-color: #fdc708;
+    background-color: var(--main-color1);
     width: 518px;
     height: 80px;
     border-radius: 8px;
@@ -213,14 +217,14 @@ body {
     font-weight: 500;
     font-size: 64px;
     text-align: center;
-    color: #fdc708;
+    color: var(--main-color1);
     line-height: 1;
   }
 
   .countlist_number_plus {
     font-weight: 500;
     font-size: 20px;
-    color: #fdc708;
+    color: var(--main-color1);
     align-self: flex-end;
     margin-bottom: 10px;
   }

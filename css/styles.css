@@ -157,11 +157,64 @@ body {
   }
 
   .hero_img {
-    position: absolute; /* Змінюємо на абсолютне позиціонування */
-    right: 0; /* Вирівнюємо по правому краю */
-    bottom: 0; /* Вирівнюємо по низу */
-    max-height: 100%; /* Забезпечуємо, щоб зображення не перевищувало висоту контейнера */
-    width: auto; /* Зберігаємо пропорції */
-    object-fit: contain; /* Зберігаємо пропорції при масштабуванні */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
   }
+
+  .container_count {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+  }
+
+  .countlist {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+  }
+
+  .countlist_item {
+    width: 242px;
+    height: 96px;
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+  }
+
+  .countlist_number_block_top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+  }
+
+  .countlist_number {
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+    color: #fdc708;
+    line-height: 1;
+    
+  }
+
+  .countlist_number_plus {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fdc708;
+    align-self: flex-end;  
+    margin-bottom: 10px;
+    
+  }
+
+  .countlist_text {
+    display: block;          
+    text-align: center;      
+    width: 100%;            
+    margin-top: 8px; 
+
 }

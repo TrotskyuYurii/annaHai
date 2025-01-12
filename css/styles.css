@@ -7,7 +7,8 @@
 }
 
 :root {
-  --main-color1: #fdc708;
+  --main-color1: #222222;
+  --main-color2: #fdc708;
 }
 
 body {
@@ -86,13 +87,13 @@ body {
   }
 
   .langlist_active {
-    color: var(--main-color1);
+    color: var(--main-color2);
     opacity: 0.8;
   }
 
   /* ----------------------section hero---------------------- */
   .container-hero {
-    background-color: #222222;
+    background-color: var(--main-color1);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -115,7 +116,7 @@ body {
     display: block;
     font-size: 96px;
     letter-spacing: -0.05em;
-    color: var(--main-color1);
+    color: var(--main-color2);
   }
 
   .hero_name_last {
@@ -146,7 +147,7 @@ body {
   }
 
   .cta-button {
-    background-color: var(--main-color1);
+    background-color: var(--main-color2);
     width: 518px;
     height: 80px;
     border-radius: 8px;
@@ -210,14 +211,14 @@ body {
     font-weight: 500;
     font-size: 64px;
     text-align: center;
-    color: var(--main-color1);
+    color: var(--main-color2);
     line-height: 1;
   }
 
   .countlist_number_plus {
     font-weight: 500;
     font-size: 20px;
-    color: var(--main-color1);
+    color: var(--main-color2);
     align-self: flex-end;
     margin-bottom: 10px;
   }
@@ -231,7 +232,33 @@ body {
 
   /* ----------------------section about-------------------------------------- */
   .container-about {
-    
+
+  }
+  
+  .acquaintance_block_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start
+  }
+  .acquaintance_title_text {
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: -0.05em;
+  }
+  .acquaintance_title_text1 {
+    display: block;
+    color: var(--main-color1);
+  }
+
+  .acquaintance_title_text2 {
+    display: block;
+    color: var(--main-color2);
+  }
+
+  .acquaintance_block_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .arrow_black {

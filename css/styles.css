@@ -7,7 +7,7 @@
 }
 
 :root {
-  --main-color1: #FDC708;
+  --main-color1: #fdc708;
 }
 
 body {
@@ -26,21 +26,17 @@ body {
 
 /* Media queries desktop */
 @media screen and (min-width: 1440px) {
- 
-    /* ----------------------section general---------------------- */
- 
+  /* ----------------------section general---------------------- */
+
   .container {
     max-width: 1440px;
     height: 100%;
     padding: 0px 0px;
     margin: 0 auto;
   }
- 
 
+  /* ----------------------section header + menu---------------------- */
 
-
- /* ----------------------section header + menu---------------------- */
- 
   .container-header {
     max-width: 1040px;
     margin: 0 auto;
@@ -94,12 +90,7 @@ body {
     opacity: 0.8;
   }
 
-  
-
-
-
-
-    /* ----------------------section hero---------------------- */
+  /* ----------------------section hero---------------------- */
   .container-hero {
     background-color: #222222;
     display: flex;
@@ -116,15 +107,19 @@ body {
     z-index: 1;
   }
 
-  .hero_title1 {
+  .hero_title {
     font-weight: 700;
+  }
+
+  .hero_name_first {
+    display: block;
     font-size: 96px;
     letter-spacing: -0.05em;
     color: var(--main-color1);
   }
 
-  .hero_title2 {
-    font-weight: 700;
+  .hero_name_last {
+    display: block;
     font-size: 146px;
     letter-spacing: -0.02em;
     color: #fff;
@@ -183,8 +178,6 @@ body {
     object-fit: contain;
   }
 
-
-
   /* ----------------------section counter---------------------- */
 
   .container_count {
@@ -236,17 +229,12 @@ body {
     margin-top: 8px;
   }
 
+  /* ----------------------section about-------------------------------------- */
+  .container-about {
+    
+  }
 
-
-
-    /* ----------------------section about-------------------------------------- */
-.container-about{
-  
-}
-
-.arrow_black{
-  transform: rotate(180deg);
-}
-
-
+  .arrow_black {
+    transform: rotate(180deg);
+  }
 }

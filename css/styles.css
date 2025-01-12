@@ -302,7 +302,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 24px;
-    /* margin: 0; */
   }
 
   .profile_text_list li {
@@ -316,4 +315,14 @@ body {
     max-width: 508px;
     max-height: 625px;
   }
+
+
+  /* ----------------------section whatmywork---------------------- */
+
+  .container_whatmywork{
+    /* max-width: 1040px; */
+  }
+
+
+
 }

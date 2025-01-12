@@ -177,6 +177,8 @@ body {
     max-height: 100%;
     width: auto;
     object-fit: contain;
+    max-width: 396px;
+    max-height: 750px;
   }
 
   /* ----------------------section counter---------------------- */
@@ -232,13 +234,15 @@ body {
 
   /* ----------------------section about-------------------------------------- */
   .container-about {
-
+    max-width: 1040px;
+    margin: 0 auto;
   }
-  
+
   .acquaintance_block_main {
     display: flex;
     justify-content: space-between;
-    align-items: start
+    align-items: start;
+    margin-bottom: 64px;
   }
   .acquaintance_title_text {
     font-weight: 500;
@@ -248,11 +252,15 @@ body {
   .acquaintance_title_text1 {
     display: block;
     color: var(--main-color1);
+    margin: 0;
+    padding: 0;
   }
 
   .acquaintance_title_text2 {
     display: block;
     color: var(--main-color2);
+    margin: 0;
+    padding: 0;
   }
 
   .acquaintance_block_right {
@@ -260,8 +268,51 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
-
-  .arrow_black {
+  625 .arrow_black {
     transform: rotate(180deg);
+  }
+
+  .content_block {
+    text-transform: uppercase;
+    display: flex;
+
+    margin-top: 48px;
+    gap: 32px;
+  }
+
+  .about_block_left{
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+
+  }
+
+  .profile_text_header {
+    margin-top: 0;
+  }
+
+  .profile_name {
+    font-weight: 700;
+  }
+
+  .profile_text_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    /* margin: 0; */
+  }
+
+  .profile_text_list li {
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 24px;
+  border-bottom: 1px solid var(--main-color1);
+  }
+
+  .profile_image {
+    max-width: 508px;
+    max-height: 625px;
   }
 }

@@ -357,6 +357,7 @@ body {
 
   .whatmywork_content {
     padding-bottom: 64px;
+    position: relative;
   }
 
   .whatmywork_list {
@@ -386,6 +387,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 100px;
   }
 
   .cta-button_whatmywork {
@@ -399,4 +401,15 @@ body {
     font-size: 16px;
     line-height: 124%;
   }
+
+  .whatmywork_photo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    z-index: 1;
+  }
+
 }

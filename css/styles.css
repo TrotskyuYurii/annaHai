@@ -329,6 +329,7 @@ body {
     margin: 0 auto;
     max-width: 1038px;
     padding-top: 80px;
+    padding-bottom: 64px;
   }
 
   .whatmywork_title_text {
@@ -352,4 +353,26 @@ body {
   .service_block_right_text {
     color: var(--main-color2);
   }
+
+  .whatmywork_list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1038px;
+    color: #ffffff;
+  }
+
+  .whatmywork_list ul {
+
+}
+
+.whatmywork_list li {
+  margin-bottom: 32px; 
+  display: flex;
+  align-items: center;
+}
+
+.whatmywork_point {
+  margin-right: 8px;
 }

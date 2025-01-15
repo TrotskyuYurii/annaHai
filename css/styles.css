@@ -466,11 +466,69 @@ body {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     text-align: right;
-    color: #222;
+    color: var(--main-color1);
   }
 
   .format_subtitle_right_text2 {
     font-weight: 400;
     font-size: 24px;
+  }
+
+  .format_list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .format_list_item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .format_list_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 508px;
+  }
+
+  .format_list_title {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--main-color1);
+  }
+
+  .format_list_text_description {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--main-color1);
+  }
+
+  .format_list_number {
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    color: var(--main-color1);
+  }
+
+  .format_list_line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color1);
+  }
+
+  .format_info {
+    display: flex;
+    justify-content:end;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-color1);
+    margin-top: 24px;
+    margin-bottom: 100px;
   }
 }

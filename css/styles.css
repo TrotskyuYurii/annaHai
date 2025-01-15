@@ -412,4 +412,32 @@ body {
     z-index: 1;
   }
 
+  /* ----------------------section format---------------------- */
+
+  .container_format {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+
+  .format_title{
+    display: flex;
+    max-width: 1038px;
+  }
+
+.format_title_text {
+  font-weight: 500;
+  font-size: 90px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.format_title_white {
+  color: var(--main-color1);
+}
+
+.format_title_yellow {
+  color: var(--main-color2);
+}
+
 }

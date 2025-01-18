@@ -531,4 +531,57 @@ body {
     margin-top: 24px;
     margin-bottom: 100px;
   }
+
+.generalRules_container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+.generalRules_title {
+font-weight: 400;
+font-size: 48px;
+letter-spacing: -0.05em;
+color: var(--main-color1);
+padding-right: 150px;
+}
+
+.generalRules_list_item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 48px;
+}
+
+.generalRules_list_item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--main-color2); 
+}
+
+
+.generalRules_list_item h3 {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.generalRules_list_item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+.generalRules_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
 }

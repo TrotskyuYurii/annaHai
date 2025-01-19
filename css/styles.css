@@ -524,7 +524,7 @@ body {
 
   .format_info {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     font-weight: 400;
     font-size: 16px;
     color: var(--main-color1);
@@ -534,129 +534,109 @@ body {
 
   /* ----------------------section generalRules---------------------- */
 
+  .generalRules_container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+  }
 
-.generalRules_container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-}
+  .generalRules_title {
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: -0.05em;
+    color: var(--main-color1);
+    padding-right: 150px;
+  }
 
-.generalRules_title {
-font-weight: 400;
-font-size: 48px;
-letter-spacing: -0.05em;
-color: var(--main-color1);
-padding-right: 150px;
-}
+  .generalRules_list_item {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 48px;
+  }
 
-.generalRules_list_item {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 48px;
-}
+  .generalRules_list_item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--main-color2);
+  }
 
-.generalRules_list_item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: var(--main-color2); 
-}
+  .generalRules_list_item h3 {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+  }
 
-.generalRules_list_item h3 {
-  margin: 0 0 16px 0;
-  font-size: 24px;
-  font-weight: 400;
-}
+  .generalRules_list_item p {
+    margin: 0;
+    line-height: 1.5;
+  }
 
-.generalRules_list_item p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-
-.generalRules_list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
+  .generalRules_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
   /* ----------------------section biggerAchievements_container---------------------- */
 
-.biggerAchievements_container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-}
+  .biggerAchievements_container {
+    max-width: 1440px;
+    height: 585px;
+    /* margin: 0 auto; */
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    /* display: flex; */
+    background: url(/src/img/photo/biggerAchievements_background_x1.jpg) center
+      center/cover no-repeat;
+  }
 
-.biggerAchievements_main {
-  position: relative;
-  padding: 100px 200px;
-  z-index: 2;
-  max-width: 1040px;
-  margin: 0 auto;
-}
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .biggerAchievements_container {
+      background: url(/src/img/photo/biggerAchievements_background_x2.jpg)
+        center center/cover no-repeat;
+    }
+  }
 
-.biggerAchievements_main img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
+  .biggerAchievements_main {
+    padding-top: 132px;
+    padding-left: 196px;
+  }
 
-.biggerAchievements_title {
-  position: relative;
-  z-index: 3;
-  color: var(--main-color3);
+  .biggerAchievements_title {
+    color: var(--main-color3);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
 
+  .biggerAchievements_content {
+    max-width: 488px;
+    padding-top: 64px;
+    align-self: stretch;
+    color: var(--main-color3);
+    text-align: justify;
+  }
 
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 120%;
-  letter-spacing: -0.05em;
+  .biggerAchievements_text {
+    padding-bottom: 24px;
+    font-weight: 400;
+  }
 
+  .biggerAchievements_button{
+    max-width: 100%;
+  }
 
-}
+  .arrow_black_biggerAchievements {
+    transform: rotate(360deg);
+    padding-left: 10px;
 
-.biggerAchievements_text {
-  position: relative;
-  z-index: 3;
-  color:  var(--main-color3); 
-  margin-bottom: 48px;
-
-font-weight: 400;
-font-size: 16px;
-text-align: justify;
-
-
-}
-
-.biggerAchievements .cta-button {
-  position: relative;
-  z-index: 3;
-  background-color: var(--main-color2);
-  width: 518px;
-  height: 80px;
-  border-radius: 8px;
-  border: none;
-  font-weight: 700;
-  font-size: 20px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
+  }
 }

@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: "Helvetica", Arial, sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: var(--main-color3);
 }
 
 /* Media queries mobile */
@@ -630,13 +630,81 @@ body {
     font-weight: 400;
   }
 
-  .biggerAchievements_button{
+  .biggerAchievements_button {
     max-width: 100%;
   }
 
   .arrow_black_biggerAchievements {
     transform: rotate(360deg);
     padding-left: 10px;
-
   }
+
+  /* ----------------------section prices------------------------ */
+
+  .prices_container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+
+  .prices_main {
+    display: flex;
+    max-width: 1038px;
+    justify-content: space-between;
+    padding-bottom: 64px;
+  }
+
+  .format_prices_text {
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -4.5px;
+  }
+
+  .format_prices_white {
+    color: var(--main-color1);
+  }
+
+  .format_prices_yellow {
+    color: var(--main-color2);
+  }
+
+  .prices_block_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .prices_list {
+    padding-left: 200px;
+    /* width: 863px; */
+  }
+
+  .prices_list_item {
+padding-bottom: 64px;
+}
+
+  .prices_list_name {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color1);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    padding-bottom: 24px;
+  }
+
+  .prices_list_line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color1);
+  }
+
+  .prices_list_time{
+    padding-top: 24px;
+  }
+
 }

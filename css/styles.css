@@ -801,6 +801,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 64px;
+
+    justify-content: center;
+    align-items: center;
   }
 
   .faq_text_one {
@@ -810,10 +813,36 @@ body {
     font-size: 32px;
     line-height: 100%; /* 32px */
     text-transform: uppercase;
+    padding-bottom: 64px;
   }
 
-  .faq_text_one_yellow{
+  .faq_text_one_yellow {
     color: var(--main-color2);
+  }
+
+  .faq_text_two {
+    color: var(--main-color1);
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    text-transform: uppercase;
+    padding-bottom: 64px;
+  }
+
+  .faq_button {
+    width: 417px;
+    height: 80px;
+  }
+
+  .faq_text_four {
+    color: var(--main-color1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .social_list {
+    display: flex;
+    width: 242px;
+    justify-content: space-between;
   }
 
 }

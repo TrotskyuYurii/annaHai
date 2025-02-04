@@ -710,10 +710,6 @@ body {
   /* ----------------------section reviews------------------------ */
 
   .reviews_container {
-    /* max-width: 1040px;
-    margin: 0 auto;
-    padding-top: 200px; */
-
     max-width: 1040px;
     margin: 0 auto;
     padding-top: 200px;
@@ -775,6 +771,19 @@ body {
     text-align: justify;
   }
 
+
+/* ----------------------section faq------------------------ */
+
+.faq_container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.faq_main {
+  display: flex;
+
+}
 
 
   

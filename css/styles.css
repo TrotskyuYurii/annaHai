@@ -845,4 +845,14 @@ body {
     justify-content: space-between;
   }
 
+  /* ----------------------section contact------------------------ */
+
+  .contact_container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+
+  
+
 }

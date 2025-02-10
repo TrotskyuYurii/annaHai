@@ -876,14 +876,30 @@ body {
     color: var(--main-color2);
   }
 
-.contact_info {
-  display: flex;
-  color: var(--main-color1);
-  width: 419px;
-}
+  .contact_info {
+    display: flex;
+    color: var(--main-color1);
+    width: 419px;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
 
-.contact_info_text {
-  justify-content: space-between;
-}
+  .contact_info_text {
+    text-align: justify;
+  }
+
+  .contact_list {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: end;
+    margin-bottom: 64px;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
 
 }

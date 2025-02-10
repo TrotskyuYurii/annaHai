@@ -853,6 +853,37 @@ body {
     padding-top: 200px;
   }
 
-  
+  .contact_main {
+    display: flex;
+    max-width: 1038px;
+    justify-content: space-between;
+    padding-bottom: 64px;
+  }
+
+  .contact_title {
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -4.5px;
+  }
+
+  .contact_title_black {
+    color: var(--main-color1);
+  }
+
+  .contact_title_yellow {
+    color: var(--main-color2);
+  }
+
+.contact_info {
+  display: flex;
+  color: var(--main-color1);
+  width: 419px;
+}
+
+.contact_info_text {
+  justify-content: space-between;
+}
 
 }

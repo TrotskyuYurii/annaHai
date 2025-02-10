@@ -168,7 +168,7 @@ body {
     display: flex;
     gap: 16px;
     margin-left: 48px;
-    align-items: end;
+    align-self: flex-end;
   }
 
   .hero_img {
@@ -500,6 +500,7 @@ body {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     color: var(--main-color1);
+    margin-bottom: 24px;
   }
 
   .format_list_text_description {

@@ -891,7 +891,7 @@ body {
 
   .contact_list {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: end;
     margin-bottom: 64px;
   }
@@ -899,7 +899,45 @@ body {
   .contact_form {
     display: flex;
     flex-direction: column;
+  }
 
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap:72px;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid #adadad;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .contact_form textarea {
+    /* min-height: 10px; */
+    resize: vertical;
+  }
+
+  .contact_form input::placeholder,
+  .contact_form textarea::placeholder {
+    color: #adadad;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .cta-button {
+    align-self: center;
+    transition: background-color 0.3s ease;
+    margin-top: 64px;
+  }
+
+  .contact_form button:hover {
+    background: #e3b43d;
   }
 
 

@@ -846,6 +846,62 @@ body {
     justify-content: space-between;
   }
 
+
+
+
+/* ----------------------Обробка відкриття - закриття питань і відповідей ----------------------*/
+
+  .faq_list {
+    list-style: none;
+    padding: 0;
+}
+
+.faq_list_item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--main-color1);
+}
+
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.faq_list_item.active .arrow {
+  transform: rotate(-135deg);
+}
+
+.faq_answer {
+  display: none;
+  padding: 0 15px 15px;
+  margin: 0;
+}
+
+.faq_list_item.active .faq_answer {
+  display: block;
+}
+
+
+
+
+
+
+
   /* ----------------------section contact------------------------ */
 
   .contact_container {

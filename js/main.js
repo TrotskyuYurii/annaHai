@@ -1,5 +1,7 @@
+// Ініціалізація EmailJS
 emailjs.init("S888tYgOF-13G4p-w");
 
+// Обробка сабміту форми
 document
   .querySelector(".contact_form")
   .addEventListener("submit", function (event) {
@@ -32,3 +34,25 @@ document
         }, 3000);
       });
   });
+
+
+//Обробка відкриття питання-відповідь
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq_list_item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('h3');
+        
+        question.addEventListener('click', () => {
+            // Закриваємо всі інші відповіді
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Перемикаємо стан поточного елемента
+            item.classList.toggle('active');
+        });
+    });
+});

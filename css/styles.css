@@ -758,13 +758,10 @@ body {
   }
 
   .logo_reviews {
-    /* display: flex;
-    align-self: flex-end;
-    align-items: center; */
-
     display: flex;
     align-items: center;
     align-self: flex-end;
+    padding-bottom: 64px;
   }
 
   .logo_reviews_img {

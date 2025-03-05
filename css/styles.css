@@ -778,6 +778,12 @@ body {
     text-align: justify;
   }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
   /* ----------------------section faq------------------------ */
 
   .faq_container {

@@ -13,14 +13,14 @@ function initReviewsSlider() {
     if (reviewsSliderEl) {
         const reviewsSwiper = new Swiper('.reviewsSwiper', {
             // Основні налаштування
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
             loop: true,
             grabCursor: true,
             
             // Автопрокрутка
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false,
             },
             

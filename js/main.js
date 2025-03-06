@@ -1,6 +1,7 @@
 // Ініціалізація EmailJS
 emailjs.init("S888tYgOF-13G4p-w");
 
+
 // Обробка сабміту форми
 document
   .querySelector(".contact_form")
@@ -14,14 +15,14 @@ document
     inputs.forEach(input => {
       if (!input.value.trim()) {
         allFilled = false;
-        input.classList.add('error'); // Додаємо клас для стилізації помилки
+        input.classList.add('error'); 
       } else {
         input.classList.remove('error');
       }
     });
     
     if (!allFilled) {
-      return; // Зупиняємо відправку форми
+      return; 
     }
 
     // Показуємо індикатор завантаження
@@ -42,8 +43,7 @@ document
         }, 3000);
       })
       .catch((error) => {
-        // Обробка помилок
-        // console.error("Failed to send email:", error);
+
         button.textContent = "Помилка відправки";
 
         setTimeout(() => {
@@ -72,4 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.toggle('active');
         });
     });
+});
+
+//авто-заповнення року
+document.addEventListener("DOMContentLoaded", () => {
+  const currentYear = new Date().getFullYear();
+  document.querySelector(".copyright").innerHTML = `всі права захищені ©${currentYear}`;
 });

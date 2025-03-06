@@ -1077,7 +1077,7 @@ body {
   .social-links {
     padding-left: 208px;
     display: flex;
-    gap: 8px;
+    gap: 12px;
   }
 
   .copyright {

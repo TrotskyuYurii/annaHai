@@ -6,6 +6,23 @@ document
   .querySelector(".contact_form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
+    
+    // Перевіряємо, чи всі поля заповнені
+    const inputs = this.querySelectorAll('input, textarea');
+    let allFilled = true;
+    
+    inputs.forEach(input => {
+      if (!input.value.trim()) {
+        allFilled = false;
+        input.classList.add('error'); // Додаємо клас для стилізації помилки
+      } else {
+        input.classList.remove('error');
+      }
+    });
+    
+    if (!allFilled) {
+      return; // Зупиняємо відправку форми
+    }
 
     // Показуємо індикатор завантаження
     const button = this.querySelector("button");
@@ -26,7 +43,7 @@ document
       })
       .catch((error) => {
         // Обробка помилок
-        console.error("Failed to send email:", error);
+        // console.error("Failed to send email:", error);
         button.textContent = "Помилка відправки";
 
         setTimeout(() => {

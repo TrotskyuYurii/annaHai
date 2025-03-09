@@ -23,6 +23,43 @@ body {
 @media screen and (min-width: 320px) and (max-width: 1440px) {
   .container {
     max-width: 320px;
+    height: 100%;
+    padding: 0px 0px;
+    margin: 0 auto;
+  }
+
+  /* -------------------------------Header------------------------------ */
+
+  .logo {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 16px;
+    color: #222;
+    padding-left: 17px;
+  }
+
+  .logo_img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .mob-menu {
+    display: flex;
+  }
+
+  .mainmenulist {
+    display: none;
+  }
+
+  .langlist {
+    display: none;
   }
 }
 
@@ -58,11 +95,18 @@ body {
     font-size: 16px;
   }
 
+  .desktop-menu {
+    display: flex;
+  }
+
   .mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+  }
+  .mobile-menu-button {
+    display: none;
   }
 
   .mainmenulist {
@@ -157,8 +201,6 @@ body {
     margin-left: 48px;
     align-self: flex-end;
   }
-
-
 
   .cta-button {
     background-color: var(--main-color2);
@@ -775,36 +817,35 @@ body {
     text-align: justify;
   }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
-.swiper-wrapper {
-  padding-bottom: 64px;
-}
+  .swiper-wrapper {
+    padding-bottom: 64px;
+  }
 
-.reviews_list_item {
-  border-left: 1px solid black; 
-  padding-left: 15px;
-}
+  .reviews_list_item {
+    border-left: 1px solid black;
+    padding-left: 15px;
+  }
 
-/* Змінюємо точки на горизонтальні риски */
-.swiper-pagination-bullet {
-  width: 20px;  /* Довжина риски */
-  height: 4px;  /* Товщина риски */
-  border-radius: 2px; /* Закруглені кінці */
-  background-color: var(--main-color1); /* Колір рисок */
-  opacity: 0.5; /* Прозорість */
-  transition: background-color 0.3s, opacity 0.3s;
-}
+  /* Змінюємо точки на горизонтальні риски */
+  .swiper-pagination-bullet {
+    width: 20px; /* Довжина риски */
+    height: 4px; /* Товщина риски */
+    border-radius: 2px; /* Закруглені кінці */
+    background-color: var(--main-color1); /* Колір рисок */
+    opacity: 0.5; /* Прозорість */
+    transition: background-color 0.3s, opacity 0.3s;
+  }
 
-/* Стиль для активного елемента */
-.swiper-pagination-bullet-active {
-  background-color: var(--main-color2); /* Колір активної риски */
-  opacity: 1; /* Робимо активну риску яскравішою */
-}
-
+  /* Стиль для активного елемента */
+  .swiper-pagination-bullet-active {
+    background-color: var(--main-color2); /* Колір активної риски */
+    opacity: 1; /* Робимо активну риску яскравішою */
+  }
 
   /* ----------------------section faq------------------------ */
 
@@ -1023,10 +1064,9 @@ body {
   }
 
   .contact_form input.error,
-.contact_form textarea.error {
-  border: 2px solid red;
-}
-
+  .contact_form textarea.error {
+    border: 2px solid red;
+  }
 
   /* ----------------------footer------------------------ */
 

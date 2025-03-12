@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Показувати або приховувати кнопку залежно від положення скролу
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 800) {
           backToTopButton.style.opacity = '1';
       } else {
           backToTopButton.style.opacity = '0';

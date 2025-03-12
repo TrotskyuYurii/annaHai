@@ -79,3 +79,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentYear = new Date().getFullYear();
   document.querySelector(".copyright").innerHTML = `всі права захищені ©${currentYear}`;
 });
+
+// Функціонал кнопки "Наверх"
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTopButton = document.getElementById('backToTop');
+  
+  // Показувати або приховувати кнопку залежно від положення скролу
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+          backToTopButton.style.opacity = '1';
+      } else {
+          backToTopButton.style.opacity = '0';
+      }
+  });
+  
+  // Плавне прокручування до верху при натисканні на кнопку
+  backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+});

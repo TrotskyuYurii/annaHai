@@ -198,7 +198,7 @@ body {
   .contact_list {
     display: flex;
     gap: 16px;
-    margin-left: 48px;
+    /* margin-left: 48px; */
     align-self: flex-end;
   }
 
@@ -211,7 +211,6 @@ body {
     font-weight: 700;
     font-size: 20px;
     color: black;
-    padding: 32px 24px;
 
     display: flex;
     justify-content: center;
@@ -1011,11 +1010,12 @@ body {
     text-align: justify;
   }
 
-  .contact_list {
+  .contact_list_2 {
     display: flex;
     justify-content: flex-end;
     align-items: end;
     margin-bottom: 64px;
+    gap: 16px;
   }
 
   .contact_form {
@@ -1056,7 +1056,7 @@ body {
   .cta-button {
     align-self: center;
     transition: background-color 0.3s ease;
-    margin-top: 64px;
+    /* margin-top: 64px; */
   }
 
   .contact_form button:hover {

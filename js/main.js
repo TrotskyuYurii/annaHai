@@ -101,3 +101,29 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+//Робота з мобыльним меню
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.querySelector('.mobile-menu-button');
+  const closeButton = document.querySelector('.close-menu-button');
+  const mobileMenu = document.querySelector('.mob-menu');
+  
+  // Відкриваємо меню при кліку на бургер
+  menuButton.addEventListener('click', function() {
+      mobileMenu.classList.add('is-open');
+  });
+  
+  // Закриваємо меню при кліку на кнопку закриття
+  closeButton.addEventListener('click', function() {
+      mobileMenu.classList.remove('is-open');
+  });
+  
+  // Закриваємо меню при кліку на посилання
+  const mobileMenuLinks = document.querySelectorAll('.mobilemenulist a');
+  mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          mobileMenu.classList.remove('is-open');
+      });
+  });
+});

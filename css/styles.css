@@ -68,10 +68,49 @@ body {
 
 
   .mob-menu {
-    /* display: flex; */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+    padding: 60px 20px 20px; /* Збільшуємо відступ зверху для кнопки закриття */
+}
+  
+  .mob-menu.is-open {
+    display: block; 
   }
 
+  .mobilemenulist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
 
+  .close-menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close-button_img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.close-menu-button:hover .close-button_img {
+    transform: rotate(90deg);
+}
   .mainmenulist {
     display: none;
   }

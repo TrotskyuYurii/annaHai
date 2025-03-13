@@ -28,6 +28,18 @@ body {
     margin: 0 auto;
   }
 
+  .container-header {
+    padding: 0 15px; 
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
   /* -------------------------------Header------------------------------ */
 
   .logo {
@@ -38,7 +50,7 @@ body {
     font-family: "Inter", system-ui, sans-serif;
     font-size: 16px;
     color: #222;
-    padding-left: 17px;
+    /* padding-left: 17px; */
   }
 
   .logo_img {
@@ -47,16 +59,11 @@ body {
   }
 
   .mobile-menu-button {
-    /* display: flex; */
     background-color: transparent;
-    border: 1px;
+    border: none;
     cursor: pointer;
-    /* transition: 0.3s; */
   }
 
-  .mobile-menu-button:hover {
-    /* box-shadow: 0 0 5px rgba(0,0,0,0.2); */
-  }
 
   .mobile-button_img {
     transition: transform 0.3s ease;
@@ -117,6 +124,28 @@ body {
   .langlist {
     display: none;
   }
+
+
+
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .arrow_up_img {
+    width: 64px;
+    height: 64px;
+  }
+
+
 }
 
 /* Media queries desktop */
@@ -1147,9 +1176,6 @@ body {
     height: 128px;
   }
 
-  .back-to-top:hover {
-    /* background-color: rgba(0, 0, 0, 0.7); */
-  }
 
   /* ----------------------footer------------------------ */
 

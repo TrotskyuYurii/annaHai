@@ -47,12 +47,30 @@ body {
   }
 
   .mobile-menu-button {
-    display: flex;
+    /* display: flex; */
+    background-color: transparent;
+    border: 1px; 
+    cursor: pointer;
+    /* transition: 0.3s; */
   }
 
-  .mob-menu {
-    display: flex;
+  .mobile-menu-button:hover {
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.2); */
+}
+
+  .mobile-button_img {
+    transition: transform 0.3s ease;
   }
+
+  .mobile-menu-button:hover .mobile-button_img {
+    transform: rotate(90deg);
+  }
+
+
+  .mob-menu {
+    /* display: flex; */
+  }
+
 
   .mainmenulist {
     display: none;

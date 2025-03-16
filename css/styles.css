@@ -156,6 +156,7 @@ body {
 
   .hero_title {
     font-weight: 700;
+    z-index: 0;
   }
 
   .hero_name_first {
@@ -234,6 +235,7 @@ body {
     object-fit: contain;
     max-width: 190px;
     max-height: 360px;
+    z-index: 1;
   }
 
 

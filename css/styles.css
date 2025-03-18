@@ -138,13 +138,11 @@ body {
 
   /* ------------------------------Hero------------------------------ */
 
-  /* .container-hero {
-    background-color: var(--main-color1);
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-  } */
+
+
+  .mobile-hidden{
+    display: none;
+  }
 
   .hero_text_block {
     padding-left: 14px;
@@ -260,6 +258,69 @@ body {
     width: 64px;
     height: 64px;
   }
+
+
+
+  /* ----------------------section counter---------------------- */
+
+  .container_count {
+    margin-top: 64px;
+    /* margin-bottom: 100px; */
+  }
+
+  .countlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    max-width: 200px; 
+    margin: 0 auto;
+  }
+
+  .countlist_item {
+    /* width: 242px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    flex-basis: calc(50% - 25px); /* Ширина елементів - 50% мінус gap */
+    min-width: 200px; /* Мінімальна ширина елементів */
+    box-sizing: border-box;
+  }
+
+  /* .countlist_number_block_top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .countlist_number {
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+    color: var(--main-color2);
+    line-height: 1;
+  }
+
+  .countlist_number_plus {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-color2);
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .countlist_text {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+  }  */
+
+
+
+
 }
 
 /* Media queries desktop */
@@ -434,6 +495,10 @@ body {
   }
 
   /* ----------------------section counter---------------------- */
+
+  .mobile-hidden{
+    display: inline;
+  }
 
   .container_count {
     margin-top: 100px;

@@ -369,10 +369,6 @@ body {
     object-fit: cover; 
   }
 
-  .profile_image2 {
-    display: none;
-  }
-
   .profile_text_list {
     flex: 1;
     display: flex;

@@ -300,6 +300,7 @@ body {
     /* max-width: 1040px; */
     margin: 0 auto;
     margin-top: 64px;
+    margin-bottom: 64px;
   }
 
   .acquaintance_block_main {
@@ -393,6 +394,104 @@ body {
     max-height: 429px;
   }
 
+
+/* ----------------------section whatmywork---------------------- */
+
+.container_whatmywork {
+  background-color: var(--main-color1);
+  padding-top: 48px;
+}
+
+.whatmywork_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+  /* max-width: 1038px;
+  padding-top: 80px;
+  padding-bottom: 64px; */
+}
+
+.whatmywork_title_text {
+  font-weight: 500;
+  font-size: 40px;
+}
+.whatmywork_title_white {
+  color: #fff;
+}
+
+.whatmywork_title_yellow {
+  color: var(--main-color2);
+}
+
+.service_block_right {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+}
+
+.service_block_right_text {
+  color: var(--main-color2);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.whatmywork_content {
+  /* padding-bottom: 64px;
+  position: relative; */
+}
+
+.whatmywork_list {
+  /* margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1038px; */
+  color: var(--main-color3);
+}
+
+.whatmywork_list li {
+  /* margin-bottom: 32px;
+  display: flex;
+  align-items: center; */
+}
+
+.whatmywork_point {
+  /* margin-right: 8px; */
+}
+
+.whatmywork_button {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px; */
+}
+
+.cta-button_whatmywork {
+  /* margin-bottom: 32px; */
+}
+
+.whatmywork_text {
+  /* max-width: 504px;
+  color: var(--main-color3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%; */
+}
+
+.whatmywork_photo {
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  z-index: 1; */
+}
+
+
+
   /* ----------back to top button---------- */
 
   .back-to-top {
@@ -413,6 +512,15 @@ body {
     height: 64px;
   }
 }
+
+
+
+
+
+
+
+
+
 
 /* Media queries desktop */
 @media screen and (min-width: 1040px) {
@@ -492,13 +600,6 @@ body {
   }
 
   /* ----------------------section hero---------------------- */
-  /* .container-hero {
-    background-color: var(--main-color1);
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-  } */
 
   .hero_text_block {
     padding-left: 200px;

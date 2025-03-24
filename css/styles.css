@@ -138,9 +138,7 @@ body {
 
   /* ------------------------------Hero------------------------------ */
 
-
-
-  .mobile-hidden{
+  .mobile-hidden {
     display: none;
   }
 
@@ -236,7 +234,6 @@ body {
     z-index: 1;
   }
 
-
   /* ----------------------section counter---------------------- */
 
   .container_count {
@@ -296,102 +293,109 @@ body {
     text-align: center;
     width: 100%;
     margin-top: 8px;
-  } 
+  }
 
+  /* ----------------------section about-------------------------------------- */
+  .container-about {
+    /* max-width: 1040px; */
+    margin: 0 auto;
+    margin-top: 64px;
+  }
 
-/* ----------------------section about-------------------------------------- */
-.container-about {
-  /* max-width: 1040px; */
-  margin: 0 auto;
-  margin-top: 64px;
-}
+  .acquaintance_block_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* margin-bottom: 64px; */
+  }
+  .acquaintance_title_text {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.05em;
+  }
+  .acquaintance_title_text1 {
+    display: block;
+    color: var(--main-color1);
+    margin: 0;
+    padding: 0;
+  }
 
-.acquaintance_block_main {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  /* margin-bottom: 64px; */
-}
-.acquaintance_title_text {
-  font-weight: 500;
-  font-size: 40px;
-  letter-spacing: -0.05em;
-}
-.acquaintance_title_text1 {
-  display: block;
-  color: var(--main-color1);
-  margin: 0;
-  padding: 0;
-}
+  .acquaintance_title_text2 {
+    display: block;
+    color: var(--main-color2);
+    margin: 0;
+    padding: 0;
+  }
 
-.acquaintance_title_text2 {
-  display: block;
-  color: var(--main-color2);
-  margin: 0;
-  padding: 0;
-}
+  .acquaintance_block_right {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 10px;
+  }
 
-.acquaintance_block_right {
-  display: flex;
-  white-space: nowrap;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: 10px;
-}
+  .arrow_black {
+    transform: rotate(180deg);
+    width: 11px;
+    height: 11px;
+  }
 
-.arrow_black {
-  transform: rotate(180deg);
-  width: 11px;
-  height: 11px;
-}
+  .content_block {
+    display: block;
+    text-transform: uppercase;
+    align-items: center; 
+    gap: 32px; 
+    margin-top: 48px; 
+  }
 
-.content_block {
-  text-transform: uppercase;
-  display: flex;
-/* 
-  margin-top: 48px;
-  gap: 32px; */
-}
+  .about_block_left {
+    display: flex;
+    flex-direction: column;
+  }
 
-.about_block_left {
-  display: flex;
-  flex-direction: column;
-  /* padding-right: 32px; */
-}
+  .profile_text_header {
+    margin-top: 0;
+  }
 
-.profile_text_header {
-  margin-top: 0;
-}
+  .profile_name {
+    font-weight: 700;
+  }
 
-.profile_name {
-  font-weight: 700;
-}
+  .profile_image1{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
 
-.profile_text_list {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-}
+  .profile_image2 {
+    display: none;
+  }
 
-.profile_text_list li {
-  line-height: 1.5;
-  margin: 0;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--main-color1);
-}
+  .profile_text_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 24px;
+  }
 
-.profile_image {
-  /* max-width: 508px;
-  max-height: 625px; */
-}
+  .profile_text_list li {
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--main-color1);
+  }
 
+  .profile_image {
+    max-width: 343px;
+    max-height: 429px;
+  }
 
+  /* ----------back to top button---------- */
 
-   /* ----------back to top button---------- */
-
-   .back-to-top {
+  .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -408,8 +412,6 @@ body {
     width: 64px;
     height: 64px;
   }
-
-
 }
 
 /* Media queries desktop */
@@ -585,7 +587,7 @@ body {
 
   /* ----------------------section counter---------------------- */
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: inline;
   }
 
@@ -675,7 +677,6 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
-
 
   .arrow_black {
     transform: rotate(180deg);

@@ -491,7 +491,10 @@ body {
 
 
 
-
+.faq_foto_img {
+  max-width: 343px;
+  max-height: 466px;
+}
 
 
 
@@ -533,7 +536,7 @@ body {
 
 
 
-/* Media queries desktop */
+/* -------------------------Media queries desktop -----------------------------*/
 @media screen and (min-width: 1040px) {
   /* ----------------------section general---------------------- */
 

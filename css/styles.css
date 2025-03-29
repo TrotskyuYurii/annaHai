@@ -491,6 +491,14 @@ body {
 
 
 
+
+
+
+
+
+
+/* ---------------section faq---------------------- */
+
 .faq_foto_img {
   max-width: 343px;
   max-height: 466px;
@@ -510,7 +518,7 @@ body {
 
   .back-to-top {
     position: fixed;
-    bottom: 35px;
+    bottom: 15px;
     right: 15px;
     display: flex;
     justify-content: center;

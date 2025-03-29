@@ -136,10 +136,14 @@ body {
     display: none;
   }
 
-  /* ------------------------------Hero------------------------------ */
+  /* ------------------------------sectionhero------------------------------ */
 
   .mobile-hidden {
     display: none;
+  }
+
+  .container-hero {
+   max-width: 100%; 
   }
 
   .hero_text_block {

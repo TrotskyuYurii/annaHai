@@ -477,14 +477,29 @@ body {
 }
 
 .whatmywork_photo {
-  /* position: absolute;
+  /* position: absolute; */
   left: 0;
   bottom: 0;
   max-height: 100%;
   width: auto;
   object-fit: contain;
-  z-index: 1; */
+  z-index: 1;
+  max-width: 190px;
+  max-height: 286px;
+  /* display: none; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -492,8 +507,8 @@ body {
 
   .back-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 35px;
+    right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

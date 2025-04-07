@@ -441,19 +441,20 @@ body {
 }
 
 .whatmywork_content {
-  /* padding-bottom: 64px;
-  position: relative; */
+  padding-bottom: 80px;
+  position: relative;
 }
 
 .whatmywork_list {
   font-size: 12px;
-  /* margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1038px; */
   color: var(--main-color3);
-  padding-bottom: 87px;
+  padding-bottom: 59px;
+  position: relative;
+  z-index: 2;
+}
+
+.whatmywork_list ul:first-child {
+  padding-left: 0;
 }
 
 .whatmywork_list li {
@@ -492,16 +493,14 @@ margin-left: auto;
 
 
 .whatmywork_photo {
-  /* position: absolute; */
-  left: 0;
+  position: absolute;
+  left: -16px;
   bottom: 0;
-  max-height: 100%;
-  width: auto;
-  object-fit: contain;
-  z-index: 1;
   max-width: 190px;
   max-height: 286px;
-  /* display: none; */
+  z-index: 1; 
+  margin: 0;
+  padding: 0;
 }
 
 

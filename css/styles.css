@@ -597,19 +597,23 @@ body {
   .format_list_title_wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .format_list_title {
-    padding-bottom: 16px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -1px;
+    margin: 0;
+    display: block;
+    width: calc(100% - 50px);
   }
 
   .format_list_text_description {
+    padding-top: 16px;
     padding-bottom: 16px;
     font-size: 12px;
     font-style: normal;
@@ -623,6 +627,7 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.6px;
+    align-self: center;
   }
 
   .format_list_line {
@@ -633,14 +638,68 @@ body {
   }
 
   .format_info {
-    /* display: flex;
-    justify-content: end;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    line-height: normal;
     color: var(--main-color1);
-    margin-top: 24px;
-    margin-bottom: 100px; */
   }
+
+
+
+/* ----------------------section generalRules---------------------- */
+
+.generalRules_container {
+  /* max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex; */
+}
+
+.generalRules_title {
+  /* font-weight: 400;
+  font-size: 48px;
+  letter-spacing: -0.05em;
+  color: var(--main-color1);
+  padding-right: 150px; */
+}
+
+.generalRules_list_item {
+  /* position: relative;
+  padding-left: 24px;
+  margin-bottom: 48px; */
+}
+
+.generalRules_list_item::before {
+  /* content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--main-color2); */
+}
+
+.generalRules_list_item h3 {
+  /* margin: 0 0 16px 0;
+  font-size: 24px;
+  font-weight: 400; */
+}
+
+.generalRules_list_item p {
+  /* margin: 0;
+  line-height: 1.5; */
+}
+
+.generalRules_list {
+  /* list-style: none;
+  padding: 0;
+  margin: 0; */
+}
+
+
+
 
   /* ---------------section faq---------------------- */
 

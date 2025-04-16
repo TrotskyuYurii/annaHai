@@ -645,73 +645,123 @@ body {
     color: var(--main-color1);
   }
 
+  /* ----------------------section generalRules---------------------- */
 
+  .generalRules_container {
+    padding-top: 64px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 64px;
+  }
 
-/* ----------------------section generalRules---------------------- */
+  .generalRules_title {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--main-color1);
+  }
 
-.generalRules_container {
-  padding-top: 64px;
-  max-width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 64px;
-}
+  .generalRules_list_item {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 48px;
+  }
 
-.generalRules_title {
-  padding-top: 64px;
-  padding-bottom: 32px;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -1px;
-text-transform: uppercase;
-  color: var(--main-color1);
+  .generalRules_list_item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--main-color2);
+  }
 
-}
+  .generalRules_list_item h3 {
+    color: var(--main-color1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
+    padding-bottom: 8px;
+  }
 
-.generalRules_list_item {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 48px;
-}
+  .generalRules_list_item p {
+    color: var(--main-color1);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-.generalRules_list_item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: var(--main-color2);
-}
+  /* ----------------------section biggerAchievements_container---------------------- */
 
-.generalRules_list_item h3 {
-  color: var(--main-color1);
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -1px;
-padding-bottom: 8px;
-}
+  .biggerAchievements_container {
+    height: 192px;
+    flex-shrink: 0;
+    max-width: 100%;
 
-.generalRules_list_item p {
-  color: var(--main-color1);
-  font-size: 12px;
+    background: url(/src/img/photo/biggerAchievements_background_x1.jpg) center
+      center/cover no-repeat;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .biggerAchievements_container {
+      background: url(/src/img/photo/biggerAchievements_background_x2.jpg)
+        center center/cover no-repeat;
+    }
+  }
+
+  .biggerAchievements_main {
+    /* padding-top: 132px;
+  padding-left: 196px; */
+  }
+
+  .biggerAchievements_title {
+    /* display: flex;
+  color: var(--main-color3);
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
+  line-height: 120%;
+  letter-spacing: -2px; */
+  }
 
-.generalRules_list {
-  /* list-style: none;
-  padding: 0;
-  margin: 0; */
-}
+  .biggerAchievements_content {
+    /* max-width: 488px;
+  padding-top: 64px;
+  align-self: stretch;
+  color: var(--main-color3);
+  text-align: justify; */
+  }
 
+  .biggerAchievements_text {
+    color: var(--main-color3);
+    text-align: justify;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+    padding-top: 35px;
+    /* max-width: 488px; */
+  }
 
+  .biggerAchievements_button {
+    /* max-width: 100%; */
+  }
 
+  .arrow_black_biggerAchievements {
+    transform: rotate(360deg);
+    padding-left: 10px;
+  }
 
   /* ---------------section faq---------------------- */
 
@@ -1346,6 +1396,7 @@ padding-bottom: 8px;
   }
 
   .biggerAchievements_title {
+    display: flex;
     color: var(--main-color3);
     font-size: 40px;
     font-style: normal;

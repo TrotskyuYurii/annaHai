@@ -334,6 +334,8 @@ body {
     flex-direction: column;
     align-items: flex-end;
     padding-bottom: 24px;
+font-style: normal;
+font-weight: 300;
   }
 
   .arrow_black {
@@ -347,7 +349,7 @@ body {
     text-transform: uppercase;
     align-items: center; 
     gap: 32px; 
-    margin-top: 48px; 
+    margin-top: 32px; 
   }
 
   .about_block_left {
@@ -425,7 +427,9 @@ body {
 .service_block_right_text {
   color: var(--main-color2);
   font-size: 10px;
-  font-weight: 700;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .whatmywork_content {

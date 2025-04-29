@@ -740,7 +740,7 @@ body {
   align-self: stretch;
   color: var(--main-color3);
   text-align: justify; */
-  padding-left: 16px;
+    padding-left: 16px;
   }
 
   .biggerAchievements_text {
@@ -768,6 +768,108 @@ body {
     flex-shrink: 0;
     margin-left: 4px;
   }
+
+  /* ----------------------section prices------------------------ */
+
+  .prices_container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .prices_main {
+    /* display: flex;
+    max-width: 1038px;
+    justify-content: space-between; */
+  }
+
+  .format_prices_text {
+    font-family: HelveticaNeueCyr;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+  }
+
+  .format_prices_white {
+    color: var(--main-color1);
+    font-family: HelveticaNeueCyr;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    text-transform: uppercase;
+  }
+
+  .format_prices_yellow {
+    color: var(--main-color2);
+    font-family: HelveticaNeueCyr;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    text-transform: uppercase;
+  }
+
+  .prices_block_right {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 24px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 24px;
+  }
+
+  .prices_list {
+    /* padding-left: 200px; */
+  }
+
+  .prices_list_item {
+    padding-bottom: 64px;
+  }
+
+  .prices_list_name {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    color: var(--main-color1);
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
+    padding-bottom: 24px;
+  }
+
+  .prices_list_line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color1);
+  }
+
+  .prices_list_time {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    font-family: HelveticaNeueCyr;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+.prices_list_price {
+  justify-self: end;
+}
+
 
   /* ---------------section faq---------------------- */
 

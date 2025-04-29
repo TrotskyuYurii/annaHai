@@ -652,7 +652,7 @@ body {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 64px;
+    /* padding-bottom: 64px; */
   }
 
   .generalRules_title {
@@ -740,6 +740,7 @@ body {
   align-self: stretch;
   color: var(--main-color3);
   text-align: justify; */
+  padding-left: 16px;
   }
 
   .biggerAchievements_text {
@@ -749,18 +750,23 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-top: 35px;
-    /* max-width: 488px; */
+    max-width: 234px;
+    font-family: HelveticaNeueCyr;
+    padding-bottom: 24px;
   }
 
   .biggerAchievements_button {
-    /* max-width: 100%; */
+    border-radius: 2.595px;
   }
 
   .arrow_black_biggerAchievements {
     transform: rotate(360deg);
-    padding-left: 10px;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-left: 4px;
   }
 
   /* ---------------section faq---------------------- */

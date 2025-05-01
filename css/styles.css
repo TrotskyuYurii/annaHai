@@ -238,6 +238,8 @@ body {
 
   .container_count {
     margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
     /* margin-bottom: 100px; */
   }
 
@@ -301,6 +303,8 @@ body {
     margin: 0 auto;
     margin-top: 64px;
     margin-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .acquaintance_block_main {
@@ -1136,7 +1140,113 @@ body {
     display: block;
   }
 
-  /* ------------------------------------------------------------------------------------ */
+
+
+/* ----------------------section contact------------------------ */
+
+.contact_container {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.contact_main {
+  display: flex;
+  max-width: 100%;
+  /* justify-content: space-between; */
+  /* padding-bottom: 64px; */
+}
+
+.contact_title {
+  /* font-size: 90px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -4.5px; */
+}
+
+.contact_title_black {
+  color: var(--main-color1);
+}
+
+.contact_title_yellow {
+  color: var(--main-color2);
+}
+
+.contact_info {
+  display: flex;
+  color: var(--main-color1);
+  /* width: 419px;
+  margin-left: auto;
+  margin-bottom: 24px; */
+}
+
+.contact_info_text {
+  text-align: justify;
+}
+
+.contact_list_2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  margin-bottom: 64px;
+  gap: 16px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 443px; */
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 72px; */
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid #adadad;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact_form textarea {
+  resize: vertical;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
+  color: #adadad;
+  text-transform: uppercase;
+  /* font-size: 16px; */
+}
+
+.cta-button {
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.contact_form button:hover {
+  background: #e3b43d;
+}
+
+.contact_form input.error,
+.contact_form textarea.error {
+  border: 2px solid red;
+}
+
+
+
+
+
 
   /* ----------back to top button---------- */
 

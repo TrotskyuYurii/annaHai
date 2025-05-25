@@ -91,13 +91,35 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255);
     z-index: 100;
     padding: 60px 20px 20px; /* Збільшуємо відступ зверху для кнопки закриття */
   }
 
   .mob-menu.is-open {
     display: block;
+  }
+
+  .logo-mobile {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+  }
+
+  .logo_img_mobile {
+    width: 30px;
+    height: 30px;
+  }
+  .logo_text_mobile {
+    color: var(--main-color1);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
   }
 
   .mobilemenulist {
@@ -1320,10 +1342,10 @@ body {
     padding-bottom: 8px;
   }
 
-.social-links_img_footer{
+  .social-links_img_footer {
     width: auto;
     height: 24px;
-}
+  }
 
   .copyright {
     font-size: 8px;
@@ -1334,7 +1356,6 @@ body {
     display: flex;
     gap: 8px;
   }
-
 
   /* ----------back to top button---------- */
 

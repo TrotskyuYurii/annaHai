@@ -92,7 +92,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgba(255, 255, 255);
-    z-index: 100;
+    z-index: 99;
     padding: 60px 20px 20px; /* Збільшуємо відступ зверху для кнопки закриття */
   }
 
@@ -165,19 +165,17 @@ body {
   }
 
 .contact_list_mobile{ 
+    padding-top: 39px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-    color: var(--main-color1);
-    font-family: Helvetica;
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 24px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 8px;
 }
 
+.social-links_img_mobile{
+    width: 32px;
+    height: 32px;
+}
 
   /* ------------------------------sectionhero------------------------------ */
 

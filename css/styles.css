@@ -767,7 +767,7 @@ body {
   /* ----------------------section biggerAchievements_container---------------------- */
 
   .biggerAchievements_container {
-    height: 192px;
+    height: 205px;
     flex-shrink: 0;
     max-width: 100%;
 
@@ -796,7 +796,7 @@ body {
   .biggerAchievements_text {
     color: var(--main-color3);
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1032,7 +1032,7 @@ body {
   .reviews_list_item p {
     text-align: justify;
     font-family: HelveticaNeueCyr;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 14.4px */
@@ -1186,6 +1186,7 @@ body {
     display: none;
     padding: 0 15px 15px 10%;
     margin: 0;
+    /* font-size: 140px; */
   }
 
   .faq_list_item.active .faq_answer {
@@ -1996,10 +1997,6 @@ body {
   .biggerAchievements_container {
     max-width: 1440px;
     height: 585px;
-    /* margin: 0 auto; */
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-    /* display: flex; */
     background: url(/src/img/photo/biggerAchievements_background_x1.jpg) center
       center/cover no-repeat;
   }

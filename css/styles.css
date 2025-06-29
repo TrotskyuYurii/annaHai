@@ -828,8 +828,8 @@ body {
 
   .arrow_black_biggerAchievements {
     transform: rotate(360deg);
-    width: 11px;
-    height: 11px;
+    width: 6px;
+    height: 6px;
     flex-shrink: 0;
     margin-left: 4px;
   }
@@ -2055,8 +2055,11 @@ body {
   }
 
   .arrow_black_biggerAchievements {
-    transform: rotate(360deg);
-    padding-left: 10px;
+    transform: rotate(0deg);
+    width: 16px;
+    height: 16px;
+    flex-shrink: 1;
+    margin-left: 14px;
   }
 
   /* ----------------------section prices------------------------ */

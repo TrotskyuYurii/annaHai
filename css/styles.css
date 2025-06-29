@@ -1399,6 +1399,10 @@ body {
   .mobile-hidden {
     display: none;
   }
+
+   .mobile-hidden2 {
+    display: none;
+  }
 }
 
 /* -------------------------Media queries desktop -----------------------------*/
@@ -1570,6 +1574,11 @@ body {
   .mobile-hidden {
     display: inline;
   }
+
+  .mobile-hidden2{
+    display: flex;
+  }
+
 
   .container_count {
     margin-top: 100px;

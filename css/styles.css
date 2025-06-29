@@ -136,7 +136,6 @@ body {
     padding-bottom: 24px;
   }
 
-
   .close-menu-button {
     position: absolute;
     top: 20px;
@@ -164,18 +163,18 @@ body {
     display: none;
   }
 
-.contact_list_mobile{ 
+  .contact_list_mobile {
     padding-top: 39px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
     gap: 8px;
-}
+  }
 
-.social-links_img_mobile{
+  .social-links_img_mobile {
     width: 32px;
     height: 32px;
-}
+  }
 
   /* ------------------------------sectionhero------------------------------ */
 
@@ -471,12 +470,23 @@ body {
     color: var(--main-color2);
   }
 
+  .service_block_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .service_block_right_text {
     color: var(--main-color2);
     font-size: 10px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .arrow_yellow2 {
+    width: 11px;
+    height: 11px;
   }
 
   .whatmywork_content {
@@ -524,8 +534,8 @@ body {
     padding-bottom: 29px;
   }
 
-  .cta-button-mobile1{
-     padding-left: 123px;
+  .cta-button-mobile1 {
+    padding-left: 123px;
   }
 
   .cta-button_whatmywork {
@@ -816,8 +826,8 @@ body {
 
   .arrow_black_biggerAchievements {
     transform: rotate(360deg);
-    width: 8px;
-    height: 8px;
+    width: 11px;
+    height: 11px;
     flex-shrink: 0;
     margin-left: 4px;
   }
@@ -1404,7 +1414,7 @@ body {
     display: none;
   }
 
-   .mobile-hidden2 {
+  .mobile-hidden2 {
     display: none;
   }
 }
@@ -1579,10 +1589,9 @@ body {
     display: inline;
   }
 
-  .mobile-hidden2{
+  .mobile-hidden2 {
     display: flex;
   }
-
 
   .container_count {
     margin-top: 100px;

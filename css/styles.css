@@ -822,6 +822,7 @@ body {
 
   .biggerAchievements_button {
     border-radius: 2.595px;
+    max-width: 97%;
   }
 
   .arrow_black_biggerAchievements {

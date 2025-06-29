@@ -804,6 +804,7 @@ body {
   color: var(--main-color3);
   text-align: justify; */
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .biggerAchievements_text {
@@ -822,7 +823,7 @@ body {
 
   .biggerAchievements_button {
     border-radius: 2.595px;
-    max-width: 97%;
+    max-width: 100%;
   }
 
   .arrow_black_biggerAchievements {

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/clearstyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
     <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -140,7 +141,7 @@
         <section class="sectionhero" id="home">
             <div class="container container-hero">
                 <div class="hero_text_block">
-                    <h1 class="hero_title">
+                    <h1 data-aos="fade-top" class="hero_title">
                         <span class="hero_name_first">ГАННА</span>
                         <span class="hero_name_last">ГАЙДАБУРА</span>
                     </h1>
@@ -185,7 +186,7 @@
                         </ul>
                     </div>
                 </div>
-                <img srcset="/src/img/photo/mainHero_x1.png 1x, /src/img/photo/mainHero_x2.png 2x" class="hero_img"
+                <img data-aos="fade-left" srcset="/src/img/photo/mainHero_x1.png 1x, /src/img/photo/mainHero_x2.png 2x" class="hero_img"
                     alt="Anna Hai" width="396" height="750">
             </div>
         </section>
@@ -1119,6 +1120,16 @@
         </div>
 
     </footer>
+
+    <!-- Підключення скриптів анімації та слайдера -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            once: true 
+        });
+    </script>
+
 </body>
 
 </html>

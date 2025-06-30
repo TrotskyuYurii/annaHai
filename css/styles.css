@@ -2210,7 +2210,8 @@ body {
   /* ----------------------section faq------------------------ */
 
   .faq_container {
-    max-width: 1040px;
+    /* max-width: 1040px; */
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 200px;
   }

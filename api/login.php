@@ -11,6 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $data = read_json_body();
 $login = (string)($data['login'] ?? '');
 $password = (string)($data['password'] ?? '');
+$configuredLogin = admin_username();
+$configuredPasswordHash = admin_password_hash();
+
+if ($configuredLogin === '' || $configuredPasswordHash === '') {
+    json_response(['error' => 'Адмін-доступ не налаштовано.'], 500);
+}
+
 $lockSeconds = login_lock_seconds_remaining($login);
 
 if ($lockSeconds > 0) {
@@ -20,7 +27,7 @@ if ($lockSeconds > 0) {
     ], 429);
 }
 
-if ($login !== ADMIN_USERNAME || !password_verify($password, admin_password_hash())) {
+if ($login !== $configuredLogin || !password_verify($password, $configuredPasswordHash)) {
     $lockSeconds = register_failed_login($login);
 
     if ($lockSeconds > 0) {

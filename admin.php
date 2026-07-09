@@ -46,7 +46,7 @@
             <form class="admin-form" data-editor-form>
                 <div class="admin-form" data-prices-fields></div>
                 <div class="admin-actions">
-                    <button class="admin-button" type="submit">Зберегти</button>
+                    <button class="admin-button" type="submit" data-save-prices>Зберегти</button>
                     <button class="admin-button admin-button-secondary" type="button" data-add-price>Додати позицію</button>
                     <button class="admin-button admin-button-warning" type="button" data-reset-prices>Скинути</button>
                     <button class="admin-button admin-button-secondary" type="button" data-logout>Вийти</button>

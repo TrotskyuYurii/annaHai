@@ -112,6 +112,11 @@ body {
   font-weight: 800;
 }
 
+.admin-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
 .admin-button-secondary {
   background: transparent;
   color: var(--admin-text);
@@ -135,8 +140,14 @@ body {
 .admin-status {
   min-height: 24px;
   margin: 0 0 20px;
+  padding: 0;
+  border-radius: 6px;
   color: var(--admin-muted);
   font-weight: 700;
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    padding 180ms ease;
 }
 
 .admin-status[data-type="success"] {
@@ -145,6 +156,25 @@ body {
 
 .admin-status[data-type="error"] {
   color: var(--admin-error);
+}
+
+.admin-status-flash {
+  padding: 12px 14px;
+  background: rgba(37, 122, 69, 0.1);
+  box-shadow: 0 0 0 1px rgba(37, 122, 69, 0.24);
+  animation: admin-status-pop 420ms ease;
+}
+
+@keyframes admin-status-pop {
+  0% {
+    transform: translateY(-4px);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 640px) {

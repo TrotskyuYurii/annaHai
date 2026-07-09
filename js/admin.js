@@ -8,12 +8,28 @@
   const addButton = document.querySelector("[data-add-price]");
   const logoutButton = document.querySelector("[data-logout]");
   const resetButton = document.querySelector("[data-reset-prices]");
+  const saveButton = document.querySelector("[data-save-prices]");
 
   let csrfToken = "";
+  let statusAnimationTimer = null;
 
   function setStatus(message, type) {
     statusMessage.textContent = message;
     statusMessage.dataset.type = type || "";
+    statusMessage.classList.remove("admin-status-flash");
+
+    if (statusAnimationTimer) {
+      window.clearTimeout(statusAnimationTimer);
+    }
+
+    if (type === "success") {
+      window.requestAnimationFrame(() => {
+        statusMessage.classList.add("admin-status-flash");
+      });
+      statusAnimationTimer = window.setTimeout(() => {
+        statusMessage.classList.remove("admin-status-flash");
+      }, 1800);
+    }
   }
 
   async function requestJson(url, options) {
@@ -150,6 +166,11 @@
     }
 
     try {
+      if (saveButton) {
+        saveButton.disabled = true;
+        saveButton.textContent = "Зберігаємо...";
+      }
+
       await requestJson("/api/prices.php", {
         method: "POST",
         headers: {
@@ -158,8 +179,21 @@
         body: JSON.stringify({ prices }),
       });
 
-      setStatus("Прайс збережено. Зміни вже доступні на сайті.", "success");
+      if (saveButton) {
+        saveButton.textContent = "Збережено";
+        window.setTimeout(() => {
+          saveButton.textContent = "Зберегти";
+          saveButton.disabled = false;
+        }, 1200);
+      }
+
+      setStatus("Успішно збережено - тепер оновіть сторінку сайта.", "success");
     } catch (error) {
+      if (saveButton) {
+        saveButton.disabled = false;
+        saveButton.textContent = "Зберегти";
+      }
+
       setStatus(error.message, "error");
     }
   });

@@ -6,17 +6,21 @@ require_once __DIR__ . '/config.php';
 
 $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off');
 
-session_set_cookie_params([
-    'lifetime' => 0,
-    'path' => '/',
-    'secure' => $isHttps,
-    'httponly' => true,
-    'samesite' => 'Strict',
-]);
+if (PHP_VERSION_ID >= 70300) {
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'secure' => $isHttps,
+        'httponly' => true,
+        'samesite' => 'Strict',
+    ]);
+} else {
+    session_set_cookie_params(0, '/; SameSite=Strict', '', $isHttps, true);
+}
 
 session_start();
 
-function json_response(array $data, int $status = 200): void
+function json_response(array $data, int $status = 200)
 {
     http_response_code($status);
     header('Content-Type: application/json; charset=utf-8');
@@ -51,14 +55,14 @@ function csrf_token(): string
     return $_SESSION['csrf_token'];
 }
 
-function require_admin(): void
+function require_admin()
 {
     if (!is_admin_logged_in()) {
         json_response(['error' => 'Потрібна авторизація.'], 401);
     }
 }
 
-function require_csrf(): void
+function require_csrf()
 {
     $headerToken = $_SERVER['HTTP_X_CSRF_TOKEN'] ?? '';
     $sessionToken = $_SESSION['csrf_token'] ?? '';
@@ -78,7 +82,7 @@ function login_attempt_key(string $login): string
     return hash('sha256', strtolower(trim($login)) . '|' . client_ip());
 }
 
-function update_login_attempts(callable $callback): mixed
+function update_login_attempts(callable $callback)
 {
     $file = login_attempts_file();
     $directory = dirname($file);
@@ -170,18 +174,18 @@ function register_failed_login(string $login): int
     });
 }
 
-function clear_failed_login(string $login): void
+function clear_failed_login(string $login)
 {
     $key = login_attempt_key($login);
 
-    update_login_attempts(function (array &$attempts) use ($key): null {
+    update_login_attempts(function (array &$attempts) use ($key) {
         unset($attempts[$key]);
 
         return null;
     });
 }
 
-function cleanup_login_attempts(array &$attempts, int $now): void
+function cleanup_login_attempts(array &$attempts, int $now)
 {
     foreach ($attempts as $key => $record) {
         if (!is_array($record)) {

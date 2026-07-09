@@ -87,7 +87,7 @@ function limit_text(string $value, int $length): string
     return substr($value, 0, $length);
 }
 
-function save_prices(array $prices): void
+function save_prices(array $prices)
 {
     $file = prices_data_file();
     $directory = dirname($file);

@@ -6,7 +6,7 @@ const LOGIN_MAX_ATTEMPTS = 5;
 const LOGIN_ATTEMPT_WINDOW_SECONDS = 900;
 const LOGIN_LOCK_SECONDS = 900;
 
-function load_env(): void
+function load_env()
 {
     static $loaded = false;
 
@@ -30,11 +30,11 @@ function load_env(): void
     foreach ($lines as $line) {
         $line = trim($line);
 
-        if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) {
+        if ($line === '' || env_starts_with($line, '#') || strpos($line, '=') === false) {
             continue;
         }
 
-        [$key, $value] = explode('=', $line, 2);
+        list($key, $value) = explode('=', $line, 2);
         $key = trim($key);
         $value = trim($value);
 
@@ -43,8 +43,8 @@ function load_env(): void
         }
 
         if (
-            (str_starts_with($value, '"') && str_ends_with($value, '"'))
-            || (str_starts_with($value, "'") && str_ends_with($value, "'"))
+            (env_starts_with($value, '"') && env_ends_with($value, '"'))
+            || (env_starts_with($value, "'") && env_ends_with($value, "'"))
         ) {
             $value = substr($value, 1, -1);
         }
@@ -52,6 +52,20 @@ function load_env(): void
         putenv($key . '=' . $value);
         $_ENV[$key] = $value;
     }
+}
+
+function env_starts_with(string $haystack, string $needle): bool
+{
+    return $needle === '' || strpos($haystack, $needle) === 0;
+}
+
+function env_ends_with(string $haystack, string $needle): bool
+{
+    if ($needle === '') {
+        return true;
+    }
+
+    return substr($haystack, -strlen($needle)) === $needle;
 }
 
 function env_value(string $key): string
